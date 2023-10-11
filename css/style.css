@@ -1033,6 +1033,7 @@ body {
 }
 .download .download_inner .download_content .downloadImg_link .appstore, .download .download_inner .download_content .downloadImg_link .playstore {
   max-width: 32%;
+  cursor: pointer;
 }
 .download .download_inner .download_content .downloadImg_link .appstore img, .download .download_inner .download_content .downloadImg_link .playstore img {
   width: 100%;
@@ -1088,6 +1089,7 @@ footer .footer_inner .social_link {
 }
 footer .footer_inner .social_link .fa-brands, footer .footer_inner .social_link .fa-solid {
   font-size: 22px;
+  cursor: pointer;
 }
 footer .footer_inner .social_link .fa-hashtag {
   color: var(--white);

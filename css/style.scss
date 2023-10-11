@@ -1173,6 +1173,7 @@ body{
                 
                 .appstore, .playstore{
                     max-width: 32%;
+                    cursor: pointer;
 
                     img{
                         width: 100%;
@@ -1236,6 +1237,7 @@ footer{
 
             .fa-brands, .fa-solid{
                 font-size: 22px;
+                cursor: pointer;
             }
 
             .fa-hashtag{
