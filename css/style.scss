@@ -1,0 +1,1253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+
+:root{
+    --heading-color: #242f51;
+    --content-color: #616368;
+    --link-color: #2500f9;
+    --white: #fff;
+    --black: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 10px;
+
+    &::-webkit-scrollbar-thumb{
+        background: var(--content-color);
+    }
+
+    &::-webkit-scrollbar{
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track{
+        background: transparent;
+    }
+}
+
+@mixin flex($val){
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+@mixin grid($val){
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+@mixin paraHeading{
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+@mixin paraText{
+    font-weight: 500;
+    color: var(--content-color);
+}
+
+@mixin linkColor{
+    font-weight: 600;
+    background-color: var(--link-color);
+    color: var(--white);
+    border-radius: 4px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+// banner_start
+.banner{
+    background-size: cover;
+    position: relative;
+    padding: 20px 0 40px;
+    margin-bottom: 80px;
+
+    .banner_top, .navbar, .navbar ul{
+        @include flex(1px);
+        justify-content: space-between;
+
+        .logo{
+            width: 40%;
+            padding-top: 6px;
+            
+            .logo_img{
+                max-width: 25%;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        
+        .navbar{
+            width: 60%;
+
+            ul{
+                gap: 40px;
+             
+                li{
+                    font-size: 16px;
+                    @include paraText;
+                    cursor: pointer;
+                    
+                    &:hover{
+                        color: var(--link-color);
+                    }
+                }
+            }
+            a{
+                font-size: 14px;
+                @include linkColor;
+                padding: 10px 16px;
+            }
+        }
+    }
+
+    .banner_top{
+        margin-bottom: 40px;
+    }
+
+    .banner_inner{
+        width: 86%;
+        @include flex(10px);
+        background: url("../images/banner_symbol.png") no-repeat center;
+        background-size: cover;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        .banner_content{
+            flex: 2;
+
+            .editiorContent{
+                width: 46%;
+               @include flex(6px);
+                gap: 10px;
+                background-color: #e2eaed;
+                border-radius: 14px;
+                margin-bottom: 10px;
+                
+                i{
+                    border-radius: 50%;
+                    color: #fff;
+                    background-color: #feaa25;
+                    padding: 6px;
+                }
+
+                .fa-check{
+                    font-size: 10px;
+                    font-weight: 600;
+                }
+
+                p{
+                    font-size: 12px;
+                    @include paraText;
+                    padding-bottom: 0;
+                }
+            }
+
+            h2{
+                width: 50%;
+                font-size: 34px;
+                line-height: 44px;
+                @include paraHeading;
+                padding-bottom: 20px;
+            }
+
+            p{
+                width: 70%;
+                font-size: 16px;
+                line-height: 26px;
+                @include paraText;
+                padding-bottom: 12px;
+            }
+
+            .banner_link{
+                @include flex(10px);
+                flex-wrap: wrap;
+                
+                a{
+                    font-size: 12px;
+                    @include linkColor;
+                    padding: 8px 14px;
+                    border-radius: 20px;
+                }
+                
+                p{
+                    font-size: 12px;
+                    @include paraText;
+                    cursor: pointer;
+                    color: var(--link-color);
+                    padding-bottom: 0;
+                }
+            }
+        }
+        
+        .banner_img{
+            flex: 1;
+            .phone_img{
+                max-width: 80%;
+                margin-left: auto;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .banner_imgs{
+        bottom: -16px;
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+        img{
+            width: 100%;
+            margin-bottom: -8px;
+        }
+    }
+}
+// banner_end
+
+// companies_start
+.companies{
+    padding: 40px 0;
+
+    .companies_inner{
+        width: 80%;
+        margin: 0 auto;
+        
+        h4{
+            font-size: 16px;
+            @include paraHeading;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+        
+        .companies_img{
+            max-width: 80%;
+            margin: 0 auto;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+// companies_end
+
+// awesome_start
+.awesome{
+    padding: 40px 0;
+    
+    .awesome_inner{
+        width: 86%;
+        @include flex(10px);
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: hidden;
+        margin: 0 auto;
+        
+        .awesomeApp_img{
+            width: 40%;
+            
+            .awesomeApp{
+                max-width: 94%;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .awesomeApp_content{
+            width: 50%;
+            margin: 0 auto;
+            
+            h4{
+                width: 50%;
+                font-size: 30px;
+                line-height: 40px;
+                @include paraHeading;
+                padding-bottom: 8px;
+            }
+
+            p{
+                width: 76%;
+                font-size: 14px;
+                line-height: 24px;
+                @include paraText;
+                padding-bottom: 30px;
+            }
+
+            .awesomeApp_details{
+                @include grid(10px);
+                grid-template-columns: 15% 82%;
+
+                .performance_img, .prototype_img, .vector_img{
+                    width: 50px;
+                    height: 50px;
+                    background-color: #ffecef;
+                    border-radius: 100%;
+                    padding: 6px;
+                    
+                    .performance{
+                        background: url('../images/cowsprite.png') no-repeat -93px -87px;
+	                    width: 30px;
+	                    height: 30px;
+                        margin: 10px;
+                    }
+
+                    .prototype{
+                        background: url('../images/cowsprite.png') no-repeat -92px -145px;
+                        width: 30px;
+                        height: 30px;
+                        margin: 10px;
+                    }
+
+                    .vector{
+                        background: url('../images/cowsprite.png') no-repeat -92px -205px;
+                        width: 30px;
+                        height: 30px;
+                        margin: 10px;
+                    }
+                }
+
+                .prototype_img{
+                    background-color: #f4f4ff;
+                }
+
+                .vector_img{
+                    background-color: #e4ffee;
+                }
+
+                    .awesomeApp_para{
+
+
+                        h5{
+                            font-size: 18px;
+                            @include paraHeading;
+                            color: #f55767;
+                            padding-bottom: 4px;
+                        }
+
+                        p{
+                            width: 64%;
+                            font-size: 14px;
+                            line-height: 24px;
+                            @include paraText;
+                        }
+                    }
+
+                    .prototype_para{
+
+                        h5{
+                            color: #2563ff;
+                        }
+                    }
+
+                    .vector_para{
+                        
+                        h5{
+                            color: #40975f;
+                        }
+                    }
+            }
+            }
+        }
+    }
+// awesome_end
+
+// jackpots_start
+.jackpots{
+    padding: 10px 0;
+
+    .jackpots_inner{
+        width: 80%;
+        overflow: hidden;
+        margin: 0 auto;
+        
+        .jackpots_top{
+            @include grid(10px);
+            grid-template-columns: repeat(2, 49%);
+            padding-bottom: 50px;
+
+            h2{
+                width: 80%;
+                font-size: 30px;
+                line-height: 40px;
+                @include paraHeading;
+                position: relative;
+                
+                &::after{
+                    content: '';
+                    width: 1px;
+                    height: 100%;
+                    background-color: #b9b9b8;
+                    top: 0;
+                    right: -24%;
+                    transform: translateX(-50%);
+                    display: inline-block;
+                    opacity: 0.5;
+                    position: absolute;
+                }
+            }
+    
+            p{
+                width: 80%;
+                font-size: 14px;
+                line-height: 24px;
+                @include paraText;
+            }
+        }
+
+        .jackpots_bottom{
+
+            .jackpots_content{
+                @include grid(10px);
+                grid-template-columns: repeat(3, 26%);
+                justify-content: space-between;
+                
+                .jackpots_details, .network_details, .reward_details{
+                    
+                    .payout, .network, .reward{
+                        width: 50px;
+                        height: 50px;
+                        background-color: #ffecef;
+                        border-radius: 100%;
+                        padding: 18px;
+                        margin-bottom: 14px;
+                        
+                        .payout_img{
+                            background: url('../images/cowsprite.png') no-repeat -93px -284px;
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+
+                    h4{
+                        font-size: 20px;
+                        @include paraHeading;
+                        color: #f55767;
+                        padding-bottom: 10px;
+                    }
+
+                    p{
+                        font-size: 14px;
+                        line-height: 24px;
+                        @include paraText;
+                    }
+                }
+
+                .network_details{
+
+                    .network{
+                        background-color: #f4f4ff;
+
+                        .network_img{
+                            background: url('../images/cowsprite.png') no-repeat -89px -357px;
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+
+                    h4{
+                        color: #2563ff;
+                    }
+                }
+
+                .reward_details{
+
+                    .reward{
+                        background-color: #e4ffee;
+                        
+                        .reward_img{
+                            background: url('../images/cowsprite.png') no-repeat -90px -434px;
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+
+                    h4{
+                        color: #40975f;
+                    }
+                }
+            }
+        }
+    }
+}
+// jackpots_end
+
+// integration_start
+.integration{
+    padding: 100px 0;
+
+    .integration_inner{
+        width: 80%;
+        @include flex(10px);
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10%;
+        margin: 0 auto;
+        
+        .integration_img{
+            flex: 2;
+            max-width: 80%;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .integration_content{
+            flex: 2;
+            
+            h4{
+                width: 80%;
+                font-size: 30px;
+                line-height: 40px;
+                @include paraHeading;
+                margin-bottom: 16px;
+            }
+
+            p{
+                font-size: 16px;
+                line-height: 26px;
+                @include paraText;
+                margin-bottom: 16px;
+            }
+
+            a{
+                font-size: 12px;
+                @include linkColor;
+                padding: 8px 18px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+// integration_end
+
+// app_start
+.app{
+    padding: 80px 0;
+
+    .app_inner{
+        width: 80%;
+        margin: 0 auto;
+        
+        .app_top{
+            width: 60%;
+            text-align: center;
+            margin: 0 auto 60px;
+
+            h4{
+                width: 78%;
+                font-size: 32px;
+                line-height: 42px;
+                @include paraHeading;
+                padding-bottom: 20px;
+                margin: 0 auto;
+            }
+
+            p{
+                font-size: 14px;
+                line-height: 24px;
+                @include paraText;
+            }
+        }
+
+        .app_bottom{
+            @include flex(10px);
+            flex-wrap: wrap;
+            
+            .appContent{
+                width: 28%;
+                text-align: center;
+                margin: 0 auto 30px;
+                
+                .develop, .award, .storage, .customization, .planning, .support{
+                    width: 30px;
+                    height: 30px;
+                    background-color: #ffecef;
+                    border-radius: 100%;
+                    padding: 18px;
+                    margin: 0 auto 14px;
+
+                    .develop_img{
+                        background: url('../images/cowsprite.png') no-repeat -258px -87px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+                .award{
+                    background-color: #eaf9ff;
+
+                    i{
+                        font-size: 26px;
+                    }
+                }
+
+                .storage{
+                    background-color: #fff6d3;
+
+                    .storage_img{
+                        background: url('../images/cowsprite.png') no-repeat -258px -231px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+                .customization{
+                    background-color: #e4ffee;
+
+                    i{
+                        font-size: 26px;
+                    }
+                }
+
+                .planning{
+                    background-color: #f4f4ff;
+
+                    .planning_img{
+                        background: url('../images/cowsprite.png') no-repeat -256px -140px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+                .support{
+                    background-color: #fdeee4;
+
+                    .support_img{
+                        background: url('../images/cowsprite.png') no-repeat -256px -186px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+                h4{
+                    font-size: 18px;
+                    @include paraHeading;
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    font-size: 14px;
+                    line-height: 24px;
+                    @include paraText;
+                }
+            }
+        }
+    }
+}
+// app_end
+
+// features_start
+.features{
+    overflow: hidden;
+    padding: 70px 0;
+
+    .features_inner{
+        width: 80%;
+        @include flex(10px);
+        align-items: flex-start;
+        margin: 0  auto;
+        
+        .features_content{
+            width: 60%;
+            
+            .features_heading{
+                width: 56%;
+    
+                h4{
+                    font-size: 30px;
+                    line-height: 40px;
+                    @include paraHeading;
+                    margin-bottom: 14px;
+                }
+
+                p{
+                    font-size: 14px;
+                    line-height: 24px;
+                    @include paraText;
+                    padding-bottom: 30px;
+                }
+            }
+
+            .features_details{
+                @include flex(10px);
+                flex-wrap: wrap;
+            
+                .features_para{
+                    width: 48%;
+                    margin: 0 auto 30px;
+                    
+                    .develop, .planning, .storage, .support{
+                        width: 30px;
+                        height: 30px;
+                        background-color: #ffecef;
+                        border-radius: 100%;
+                        padding: 18px;
+                        margin-bottom: 18px;
+                        
+                        .develop_img{
+                            background: url(../images/cowsprite.png) no-repeat -258px -87px;
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+
+                    .planning{
+                        background-color: #f4f4ff;
+                        
+                        .planning_img{
+                            background: url(../images/cowsprite.png) no-repeat -256px -140px;
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+
+                    .storage{
+                        background-color: #fff6d3;
+                        
+                        .storage_img{
+                            background: url(../images/cowsprite.png) no-repeat -258px -231px;
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+
+                    .support{
+                        background-color: #fdeee4;
+                        
+                        .support_img{
+                            background: url(../images/cowsprite.png) no-repeat -256px -186px;
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+
+                    h4{
+                        font-size: 16px;
+                        @include paraHeading;
+                        margin-bottom: 6px;
+                    }
+
+                    p{
+                        width: 80%;
+                        font-size: 12px;
+                        line-height: 22px;
+                        @include paraText;
+                    }
+                }
+            }
+
+            a{
+                font-size: 12px;
+                @include linkColor;
+                padding: 10px 32px;
+                border-radius: 38px;
+            }
+        }
+
+        .features_img{
+           width: 40%;
+
+           .built_img{  
+               margin-right: -68%;
+
+                img{
+                    width: 100%;
+                }
+           }
+        }
+    }
+}
+// features_end
+
+// charges_start
+.charges{
+    padding: 60px 0;
+
+    .charges_inner{
+        width: 80%;
+        margin: 0 auto;
+        
+        .charges_top{
+            width: 60%;
+            text-align: center;
+            margin: 0 auto 20px;
+            
+            h2{
+                width: 90%;
+                font-size: 30px;
+                line-height: 40px;
+                @include paraHeading;
+                margin-bottom: 10px;
+            }
+
+            p{
+                font-size: 14px;
+                line-height: 24px;
+                @include paraText;
+                padding-bottom: 40px;
+            }
+        }
+
+        .charges_bottom{
+            text-align: center;
+
+            .chargesPlan{
+                width: 30%;
+                @include flex(10px);
+                border: 1px solid #b9b9b8;
+                border-radius: 34px;
+                padding: 6px;
+                margin: 4px auto 40px;
+
+                &:hover a, .active{
+                    @include linkColor;
+                    border-radius: 20px;
+                }
+                
+                a{
+                    width: 48%;
+                    font-size: 14px;
+                    color: #616368;
+                    padding: 8px;
+                }
+            }
+
+            .chargesPrice{
+                width: 60%;
+                @include flex(10px);
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 30px;
+                text-align: center;
+                margin: 0 auto;                
+
+                .price_inner{
+                    width: 46%;
+                    border: 1px solid #b9b9b8;
+                    box-shadow: 0 0 20px 10px #f6f7f9;
+                    border-radius: 6px;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    margin: 0 auto;
+
+                    &:hover .price_bottom h6, .active.price_bottom h6{
+                        display: block;
+                    }
+
+                    
+                    .price_top{
+                        background-color: #f4f7f9;
+                        padding: 10px 10px 20px;
+                        margin-bottom: 10px;
+                        
+                        h4{
+                            font-size: 50px;
+                            @include paraHeading;
+                            
+                            span{
+                                font-size: 14px;
+                                font-weight: 400;
+                                color: #999ca5;
+                            }
+                        }
+
+                        h5{
+                            font-size: 18px;
+                            @include paraHeading;
+                        }
+                        
+                        p{
+                            font-size: 14px;
+                            @include paraText;
+                            font-weight: 400;
+                        }
+                    }
+
+                    .price_bottom{
+                        margin: 30px 0 30px;
+
+                        p{
+                            font-size: 14px;
+                            font-weight: 400;
+                            color: #999ca5;
+                            padding-bottom: 14px;
+                            
+                            &:nth-child(4){
+                                margin-bottom: 16px;
+                            }
+                        }
+
+                        a{
+                            font-size: 12px;
+                            @include linkColor;
+                            padding: 10px 20px;
+                            border-radius: 30px;
+                            margin: 10px 0;
+                        }
+
+                        h6{
+                            font-size: 16px;
+                            @include paraText;
+                            color: #2500f9;
+                            cursor: pointer;
+                            margin-top: 24px;
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// charges_end
+
+// client_start
+.client{
+    padding: 40px 0;
+
+    .client_inner{
+        width: 80%;
+        @include flex(10px);
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 60px;
+        margin: 0 auto;
+        
+        .clients_img{
+            width: 55.5%;
+            margin-left: -22%;
+            
+            .map_img{
+                max-width: 94%;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .client_content{
+            width: 60%;
+
+            .client_top{
+                width: 80%;
+                margin-bottom: 20px;
+
+                h2{
+                    width: 90%;
+                    font-size: 30px;
+                    line-height: 40px;
+                    @include paraHeading;
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    font-size: 14px;
+                    line-height: 24px;
+                    @include paraText;
+                }
+            }
+
+            .client_bottom{
+                
+                .stars{
+                    @include flex(10px);
+                    padding-bottom: 10px;
+                    
+                    i{
+                        font-size: 14px;
+                    }
+                }
+
+                h4{
+                    font-size: 18px;
+                    @include paraHeading;
+                    margin-bottom: 10px;
+                }
+
+                p{
+                    font-size: 14px;
+                    line-height: 24px;
+                    @include paraText;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+
+                .client_details{
+                    @include flex(10px);
+                    justify-content: space-between;
+                    
+                    .client_name{
+                        @include flex(10px);
+
+                        .client_pic{
+                            width: 60px;
+                            aspect-ratio: 4/4;
+                            display: inline-block;
+                            border-radius: 100%;
+                            overflow: hidden;
+    
+                            img{
+                                width: 100%;
+                            }
+                        }
+    
+                        .client_para{
+    
+                            h6{
+                                font-size: 14px;
+                                @include paraHeading;
+                            }
+    
+                            p{
+                                font-size: 14px;
+                                @include paraText;
+                                font-weight: 400;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    .arrow{
+                        cursor:  pointer;
+
+                        i{
+                            font-size: 14px;
+                            border: 1px solid #e2eaed;
+                            border-radius: 100%;
+                            color: #e2eaed;
+                            padding: 10px 12px;
+
+                            &:hover{
+                                background-color: #eaf9ff;
+                                border: 1px solid transparent;
+                                color: #2563ff;
+                            }
+                        }
+                        .active{
+                                background-color: #eaf9ff;
+                                border: 1px solid transparent;
+                                color: #644bf9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// client_end
+
+// question_start
+.question{
+    padding: 80px 0;
+
+    .question_inner{
+        width: 80%;
+        margin: 0 auto;
+        
+        .question_top{
+            width: 60%;
+            text-align: center;
+            margin: 0 auto 60px;
+
+            h2{
+                font-size: 32px;
+                line-height: 42px;
+                @include paraHeading;
+                padding-bottom: 20px;
+                margin: 0 auto;
+            }
+            
+            p{
+                font-size: 14px;
+                line-height: 24px;
+                @include paraText;
+            }
+        }
+
+        .question_bottom{
+            width: 60%;
+            text-align: left;
+            margin: 0 auto 60px;
+
+            .emergency, .question_para{
+                background-color: #f5f7fa;
+                padding: 30px;
+                margin: 10px 0;
+                
+                h4{
+                    font-size: 14px;
+                    line-height: 24px;
+                    @include paraHeading;
+                    padding-bottom: 16px;
+                }
+
+                p{
+                    font-size: 12px;
+                    line-height: 22px;
+                    @include paraText;
+                    font-weight: 400;
+                }
+            }
+
+            .question_para{
+                @include flex(10px);
+                justify-content: space-between;
+                padding: 14px 30px;
+                
+                h4{
+                    padding-bottom: 0;
+                }
+                i{
+                    font-size: 20px;
+                    font-weight: 700;
+                    cursor: pointer;
+                    color: #242f51;
+                }
+            }
+        }
+    }
+}
+// question_end
+
+// download_start
+.download{
+    padding: 80px 0 0;
+    overflow: hidden;
+
+    .download_inner{
+        width: 80%;
+        @include flex(10px);
+        flex-wrap: wrap;
+        margin: 0 auto;
+        
+        .download_content{
+            width: 50%;
+
+            h2{
+                font-size: 32px;
+                line-height: 42px;
+                @include paraHeading;
+                padding-bottom: 20px;
+            }
+
+            p{
+                font-size: 14px;
+                line-height: 24px;
+                @include paraText;
+                margin-bottom: 40px;
+            }
+
+            .downloadImg_link{
+                @include flex(10px);
+                gap: 20px;
+                
+                .appstore, .playstore{
+                    max-width: 32%;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+            }   
+        }
+        .app_img{
+            width: 40%;
+
+            .downloadApp{
+                margin-right: -82%;
+                
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+// download_end
+
+// footer_start
+footer{
+    background-color: #09142e;
+    padding: 80px 0 60px;
+
+    .footer_inner{
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        
+        .footer_logo{
+            max-width: 10%;
+            margin: 0 auto 20px;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .footer_link ul{
+            width: 46%;
+            @include flex(10px);
+            justify-content: space-around;
+            margin: 0 auto 20px;
+            
+            li{
+                font-size: 14px;
+                @include paraText;
+                color: var(--white);
+            }
+        }
+
+        .social_link{
+            width: 10%;
+            color: #273043;
+            @include flex(10px);
+            justify-content: space-around;
+            margin: 0 auto 40px;
+
+            .fa-brands, .fa-solid{
+                font-size: 22px;
+            }
+
+            .fa-hashtag{
+                color: var(--white);
+            }
+        }
+
+        p{
+            font-size: 14px;
+            @include paraText;
+        }
+    }
+}
+// footer_end
+

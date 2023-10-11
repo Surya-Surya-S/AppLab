@@ -1,0 +1,241 @@
+@media only screen and (max-width: 991px) {
+  .banner .banner_top .logo .navbar ul li {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+  .banner .banner_top {
+    margin-bottom: 90px;
+  }
+  .banner .banner_top .logo .logo_img {
+    max-width: 36%;
+  }
+  .banner .banner_top .navbar ul li {
+    display: none;
+  }
+  .banner .banner_inner {
+    flex-direction: column;
+  }
+  .banner .banner_inner .banner_content {
+    width: 100%;
+    flex: 0;
+    text-align: center;
+  }
+  .banner .banner_inner .banner_content .editiorContent {
+    display: none;
+  }
+  .banner .banner_inner .banner_content h2 {
+    width: 74%;
+    margin: 0 auto;
+  }
+  .banner .banner_inner .banner_content p {
+    margin: 0 auto;
+  }
+  .banner .banner_inner .banner_content .banner_link {
+    width: 56%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .banner .banner_inner .banner_img .phone_img {
+    margin: 0 auto;
+  }
+  .awesome .awesome_inner .awesomeApp_img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .awesome .awesome_inner .awesomeApp_content {
+    width: 80%;
+    text-align: center;
+  }
+  .awesome .awesome_inner .awesomeApp_content h4 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .awesome .awesome_inner .awesomeApp_content p {
+    margin: 0 auto;
+  }
+  .awesome .awesome_inner .awesomeApp_content .awesomeApp_details {
+    width: 90%;
+    grid-template-columns: auto;
+    margin: 0 auto;
+  }
+  .awesome .awesome_inner .awesomeApp_content .awesomeApp_details .awesomeApp_para {
+    text-align: center;
+  }
+  .awesome .awesome_inner .awesomeApp_content .awesomeApp_details .awesomeApp_para p {
+    width: 100%;
+  }
+  .awesome .awesome_inner .awesomeApp_content .awesomeApp_details .performance_img,
+  .awesome .awesome_inner .awesomeApp_content .awesomeApp_details .prototype_img,
+  .awesome .awesome_inner .awesomeApp_content .awesomeApp_details .vector_img {
+    margin: 0 auto;
+  }
+  .jackpots .jackpots_inner .jackpots_top {
+    grid-template-columns: auto;
+  }
+  .jackpots .jackpots_inner .jackpots_top h2,
+  .jackpots .jackpots_inner .jackpots_top p {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .jackpots .jackpots_inner .jackpots_top h2::after,
+  .jackpots .jackpots_inner .jackpots_top p::after {
+    display: none;
+  }
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content {
+    grid-template-columns: auto;
+  }
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content .jackpots_details .payout,
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content .jackpots_details .network,
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content .jackpots_details .reward,
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content .network_details .payout,
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content .network_details .network,
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content .network_details .reward,
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content .reward_details .payout,
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content .reward_details .network,
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content .reward_details .reward {
+    margin: 0 auto 14px;
+  }
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content .jackpots_details h4,
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content .network_details h4,
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content .reward_details h4 {
+    text-align: center;
+  }
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content .jackpots_details p,
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content .network_details p,
+  .jackpots .jackpots_inner .jackpots_bottom .jackpots_content .reward_details p {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+  .integration {
+    padding: 50px 0;
+  }
+  .integration .integration_inner {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .integration .integration_inner .integration_img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .integration .integration_inner .integration_content {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .integration .integration_inner .integration_content h4 {
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+  .app .app_inner .app_top {
+    width: 90%;
+  }
+  .app .app_inner .app_top h4 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .app .app_inner .app_bottom .appContent {
+    width: 70%;
+  }
+  .features .features_inner {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .features .features_inner .features_content {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .features .features_inner .features_content .features_heading {
+    width: 86%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .features .features_inner .features_content .features_details .features_para {
+    width: 48%;
+    text-align: left;
+    margin: 0 auto 30px;
+  }
+  .features .features_inner .features_img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .features .features_inner .features_img .built_img {
+    margin: auto;
+  }
+  .charges .charges_inner .charges_top {
+    width: 90%;
+  }
+  .charges .charges_inner .charges_bottom .chargesPlan {
+    width: 50%;
+  }
+  .charges .charges_inner .charges_bottom .chargesPrice .price_inner {
+    width: 90%;
+  }
+  .charges .charges_inner .charges_bottom .chargesPrice .price_inner .price_top h5 {
+    font-size: 22px;
+  }
+  .charges .charges_inner .charges_bottom .chargesPrice .price_inner .price_top p {
+    font-size: 16px;
+  }
+  .charges .charges_inner .charges_bottom .chargesPrice .price_inner .price_bottom p {
+    font-size: 16px;
+  }
+  .client .client_inner .clients_img {
+    width: 76%;
+    margin: 0 auto;
+  }
+  .client .client_inner .client_content {
+    width: 94%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .client .client_inner .client_content .client_top {
+    margin: 0 auto 60px;
+  }
+  .client .client_inner .client_content .client_top h2 {
+    margin: 0 auto 10px;
+  }
+  .client .client_inner .client_content .client_bottom {
+    text-align: left;
+  }
+  .question .question_inner .question_top {
+    width: 84%;
+  }
+  .question .question_inner .question_bottom {
+    width: 96%;
+  }
+  .question .question_inner .question_bottom .question_para {
+    padding: 14px 18px;
+  }
+  .download .download_inner .download_content {
+    width: 86%;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+  .download .download_inner .download_content .downloadImg_link {
+    justify-content: center;
+  }
+  .download .download_inner .app_img {
+    display: none;
+  }
+  footer .footer_inner .footer_logo {
+    max-width: 16%;
+  }
+  footer .footer_inner .footer_link ul {
+    width: 100%;
+    justify-content: center;
+  }
+  footer .footer_inner .footer_link ul li {
+    font-size: 10px;
+  }
+  footer .footer_inner .social_link .fa-brands, footer .footer_inner .social_link .fa-hashtag {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

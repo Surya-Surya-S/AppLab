@@ -1,0 +1,435 @@
+$phone: 767px;
+$tablet: 991px;
+$desktop: 1199px;
+
+@media only screen and (max-width: $desktop) {}
+
+@media only screen and (max-width: $tablet) {
+
+    //banner_start
+    .banner {
+        .banner_top {
+
+            .logo .navbar {
+
+                ul {
+
+                    li {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    // banner_end
+}
+
+@media only screen and (max-width: $phone) {
+    .container {
+        width: 90%;
+    }
+
+    //banner_start
+    .banner {
+        .banner_top {
+            margin-bottom: 90px;
+
+            .logo {
+
+                .logo_img {
+                    max-width: 36%;
+                }
+            }
+
+            .navbar {
+
+                ul {
+                    li {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .banner_inner {
+            flex-direction: column;
+
+            .banner_content {
+                width: 100%;
+                flex: 0;
+                text-align: center;
+
+                .editiorContent {
+                    display: none;
+                }
+
+                h2 {
+                    width: 74%;
+                    margin: 0 auto;
+                }
+
+                p {
+                    margin: 0 auto;
+                }
+
+                .banner_link {
+                    width: 56%;
+                    justify-content: center;
+                    margin: 0 auto;
+                }
+            }
+
+            .banner_img {
+
+                .phone_img {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    // banner_end
+
+    // awesome_start
+    .awesome {
+
+        .awesome_inner {
+
+            .awesomeApp_img {
+                width: 50%;
+                margin: 0 auto;
+            }
+
+            .awesomeApp_content {
+                width: 80%;
+                text-align: center;
+
+                h4 {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+
+                p {
+                    margin: 0 auto;
+                }
+
+                .awesomeApp_details {
+                    width: 90%;
+                    grid-template-columns: auto;
+                    margin: 0 auto;
+
+                    .awesomeApp_para {
+                        text-align: center;
+
+                        p {
+                            width: 100%;
+                        }
+                    }
+
+                    .performance_img,
+                    .prototype_img,
+                    .vector_img {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+    // awesome_end
+
+    // jackpots_start
+    .jackpots {
+
+        .jackpots_inner {
+
+            .jackpots_top {
+                grid-template-columns: auto;
+
+                h2,
+                p {
+                    text-align: center;
+                    margin: 0 auto;
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+            .jackpots_bottom {
+
+                .jackpots_content {
+                    grid-template-columns: auto;
+
+                    .jackpots_details,
+                    .network_details,
+                    .reward_details {
+
+                        .payout,
+                        .network,
+                        .reward {
+                            margin: 0 auto 14px;
+                        }
+
+                        h4 {
+                            text-align: center;
+                        }
+
+                        p {
+                            width: 60%;
+                            text-align: center;
+                            margin: 0 auto 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // jackpots_end
+
+    // integration_start
+    .integration {
+        padding: 50px 0;
+
+        .integration_inner {
+            display: grid;
+            grid-template-columns: auto;
+
+            .integration_img {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .integration_content {
+                width: 90%;
+                text-align: center;
+                margin: 0 auto;
+
+                h4 {
+                    width: 100%;
+                    margin: 0 auto 20px;
+                }
+            }
+        }
+    }
+
+    // integration_end
+
+    // app_start
+    .app {
+
+        .app_inner {
+
+            .app_top {
+                width: 90%;
+
+                h4 {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+
+            .app_bottom {
+
+                .appContent {
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    // app_end
+
+    // features_start
+    .features {
+
+        .features_inner {
+            display: grid;
+            grid-template-columns: auto;
+
+            .features_content {
+                width: 100%;
+                text-align: center;
+                margin: 0 auto;
+
+                .features_heading {
+                    width: 86%;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+
+                .features_details {
+
+                    .features_para {
+                        width: 48%;
+                        text-align: left;
+                        margin: 0 auto 30px;
+                    }
+                }
+            }
+
+            .features_img {
+                width: 90%;
+                margin: 0 auto;
+                
+                .built_img {
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    // features_end
+
+// charges_start
+    .charges{
+
+        .charges_inner{
+
+            .charges_top{
+                width: 90%;
+            }
+
+            .charges_bottom{
+
+                .chargesPlan{
+                    width: 50%;
+                }
+
+                .chargesPrice{
+
+                    .price_inner{
+                        width: 90%;
+                        
+                        .price_top{
+                            
+                            h5{
+                                font-size: 22px;
+                            }
+
+                            p {
+                                font-size: 16px;
+                            }
+                        }
+
+                        .price_bottom{
+
+                            p{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+// charges_end
+
+// client_start
+    .client{
+
+        .client_inner{
+
+            .clients_img{
+                width: 76%;
+                margin: 0 auto;
+            }
+
+            .client_content{
+                width: 94%;
+                text-align: center;
+                margin: 0 auto;
+                
+                .client_top{
+                    margin: 0 auto 60px;
+                    
+                    h2{
+                        margin: 0 auto 10px;
+                    }
+                }
+
+                .client_bottom{
+                    text-align: left;
+                }
+            }
+        }
+    }
+// client_end
+
+// question_start
+    .question{
+
+        .question_inner{
+
+            .question_top{
+                width: 84%;
+            }
+
+            .question_bottom{
+                width: 96%;
+                
+                .question_para{
+                    padding: 14px 18px;
+                }
+            }
+        }
+    }
+// question_end
+
+// download_start
+.download{
+
+    .download_inner{
+
+        .download_content{
+            width: 86%;
+            text-align: center;
+            margin: 0 auto 20px;
+            
+            .downloadImg_link{
+                justify-content: center;
+            }
+        }
+        
+        .app_img {
+            display: none;
+            
+        }
+    }
+}
+// download_end
+
+// footer_start
+    footer{
+
+        .footer_inner{
+
+            .footer_logo{
+                max-width: 16%;
+            }
+
+            .footer_link{
+
+                ul{
+                    width: 100%;
+                    justify-content: center;
+
+                    li{
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .social_link{
+
+                .fa-brands, .fa-hashtag{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+// footer_end
+}
